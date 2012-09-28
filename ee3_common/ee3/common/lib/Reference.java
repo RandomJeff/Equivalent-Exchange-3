@@ -20,7 +20,7 @@ public class Reference {
     public static final String VERSION = "1.0.0.0";
     public static final String CHANNEL_NAME = MOD_ID;
     public static final String LOGGER_PREFIX = "[" + MOD_ID + "] ";
-    public static final int SHIFTED_ID_SIZE = 256;
+    public static final int SHIFTED_ID_RANGE_CORRECTION = 256;
     
     /* Configuration related constants */
     public static final String ENABLE_SOUNDS = "enable_sounds";
@@ -40,10 +40,11 @@ public class Reference {
 
     /* Texture related constants */
     public static final String SPRITE_SHEET_LOCATION = "/ee3/art/sprites/";
+    public static final String ARMOR_SHEET_LOCATION = "/ee3/art/armor/";
+    public static final String GUI_SHEET_LOCATION = "/ee3/art/gui/";
     public static final String ITEM_SPRITE_SHEET = "ee3_items.png";
     public static final String BLOCK_SPRITE_SHEET = "ee3_blocks.png";
-    public static final String GUI_SHEET_LOCATION = "/ee3/art/gui/";
-    public static final String ARMOR_SHEET_LOCATION = "/ee3/art/armor/";
+    
 
     public static final int SECOND_IN_TICKS = 20;
 
