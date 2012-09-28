@@ -43,7 +43,7 @@ public class PacketKeyPressed extends PacketEE {
 	public void execute(NetworkManager manager, Player player) {
 		EntityPlayer thePlayer = (EntityPlayer) player;
 
-		if ((this.key.equals(Reference.KEYBINDING_EXTRA)) && (thePlayer.getCurrentEquippedItem().getItem().shiftedIndex == ItemIds.MINIUM_STONE)) {
+		if ((this.key.equals(Reference.KEYBINDING_EXTRA)) && ((thePlayer.getCurrentEquippedItem().getItem().shiftedIndex == ItemIds.MINIUM_STONE) || (thePlayer.getCurrentEquippedItem().getItem().shiftedIndex == ItemIds.PHILOSOPHER_STONE))) {
 			thePlayer.openGui(EquivalentExchange3.instance, GuiIds.PORTABLE_CRAFTING, thePlayer.worldObj, (int)thePlayer.posX, (int)thePlayer.posY, (int)thePlayer.posZ);
 		}
 	}
